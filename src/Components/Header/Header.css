@@ -6,5 +6,6 @@
 nav{
 
  background-image: linear-gradient(to right, #ffd5e0, #b20a2c);
+box-shadow: rgba(222, 17, 17, 0.3) 0px 19px 38px, rgba(209, 27, 7, 0.22) 0px 15px 12px;
 
 }

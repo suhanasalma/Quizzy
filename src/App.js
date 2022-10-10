@@ -6,6 +6,7 @@ import QuizzSection from './Components/QuizzSection/QuizzSection';
 import Main from './Layers/Main'
 import Blog from './Components/Blog/Blog'
 import Static from './Components/Static/Static';
+import ErrorRoute from './Components/ErrorRoute/ErrorRoute';
 
 function App() {
   const router = createBrowserRouter([
@@ -25,9 +26,11 @@ function App() {
         },
         {
           path: "/quiz/:id",
-          loader: async({params})=>{
+          loader: async ({ params }) => {
             // console.log(params.id);
-            return fetch(`https://openapi.programming-hero.com/api/quiz/${params.id}`);
+            return fetch(
+              `https://openapi.programming-hero.com/api/quiz/${params.id}`
+            );
           },
           element: <QuizzSection></QuizzSection>,
         },
@@ -40,6 +43,10 @@ function App() {
           element: <Static></Static>,
         },
       ],
+    },
+    {
+      path: "*",
+      element: <ErrorRoute></ErrorRoute>,
     },
   ]);
   return (

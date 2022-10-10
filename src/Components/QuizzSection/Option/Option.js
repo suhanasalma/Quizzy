@@ -1,23 +1,27 @@
 import React from 'react';
+ import { ToastContainer, toast } from "react-toastify";
+  import "react-toastify/dist/ReactToastify.css";
 
-const Option = ({ option }) => {
+const Option = ({ option, item }) => {
+
+  const rightAns = (e) => {
+   console.log(item.correctAnswer)
+    if(e.target.innerText === item.correctAnswer){
+      toast("Correct Ans");
+      // console.log('correct ans')
+    }else{
+      toast("Wrong Ans");
+    }
+  };
+
   return (
-    <div className="p-3  ">
-      {/* <h1 className='border option h-28'>{option}</h1> */}
-      {/* <div className="form-control border option h-28 ">
-        <label className="label cursor-pointer">
-          <span className="label-text  m-auto ">{option}</span>
-          <input
-            type="radio"
-            name="radio-6"
-            className="radio checked:bg-red-500"
-            checked
-          />
-        </label>
-      </div> */}
+    <div className="p-3 ">
       <div className="form-control">
-        <label className="label cursor-pointer border option h-28">
-          <span className="label-text m-auto">{option}</span>
+        <label className="label cursor-pointer border option sm:h-fit lg:h-28">
+          <span onClick={rightAns} className="label-text m-auto font-medium">
+            {option}
+          </span>
+          <ToastContainer />
           <input type="checkbox" className="checkbox" />
         </label>
       </div>

@@ -1,18 +1,36 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Option  from '../Option/Option';
-import '../QuizSection.css'
+import '../QuizSection.css';
+import { BeakerIcon, EyeIcon } from "@heroicons/react/24/solid";
 
 const SingleQuestion = ({ item }) => {
    console.log(item)
-   const { question,options } = item;
+   const { question, options, correctAnswer } = item;
+   const [state,setState] = useState(false)
+
+
   return (
     <div className="m-10 quiz-box p-5">
-      <h1 className="quiz-title text-lg font-bold mb-10">Quiz 1 {question}</h1>
-      <div className='grid grid-cols-2'>
+      <div className="flex justify-between items-center">
+        <h1 className="quiz-title text-lg font-bold mb-10 w-9/12">
+          Quiz 1 {question}
+        </h1>
+        <div onClick={() => setState(!state)}>
+          {state ? (
+            <div className="tooltip tooltip-open">
+              <button className="btn">{correctAnswer}</button>
+            </div>
+          ) : (
+            <EyeIcon className="h-6 w-6"></EyeIcon>
+          )}
+        </div>
+      </div>
+      <div className="grid lg:grid-cols-2 sm:grid-cols-1">
         {options.map((option) => (
-          <Option option={option}></Option>
+          <Option option={option} item={item}></Option>
         ))}
       </div>
+      
     </div>
   );
 };

@@ -1,0 +1,17 @@
+.quiz-container{
+   background-image: linear-gradient(to right, #eefaf9, #e2eff6);
+}
+
+.quiz-box{
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      background-image: linear-gradient(to right, #fdc3ca, #e2eff6);;
+
+}
+
+.quiz-title{
+   color: var(--theme-color);
+}
+
+.option{
+   border-color: var(--theme-color);
+}

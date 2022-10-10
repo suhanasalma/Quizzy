@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const HomeRight = ({quiz}) => {
    const {id, name, logo} = quiz;
@@ -11,7 +12,9 @@ const HomeRight = ({quiz}) => {
          <div className="card-body">
            <h2 className="card-title">{name}</h2>
            <div className="card-actions justify-end">
-             <button className="btn mt-32">Answer</button>
+             <Link to={`/quiz/${id}`}>
+               <button className="btn mt-32">Answer</button>
+             </Link>
            </div>
          </div>
        </div>

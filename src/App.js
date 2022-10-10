@@ -24,6 +24,14 @@ function App() {
           element: <Home></Home>,
         },
         {
+          path: "/quiz/:id",
+          loader: async({params})=>{
+            // console.log(params.id);
+            return fetch(`https://openapi.programming-hero.com/api/quiz/${params.id}`);
+          },
+          element: <QuizzSection></QuizzSection>,
+        },
+        {
           path: "/blog",
           element: <Blog></Blog>,
         },

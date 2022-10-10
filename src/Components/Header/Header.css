@@ -1,0 +1,10 @@
+.logo{
+   color: var(--theme-color);
+   cursor: pointer;
+}
+
+nav{
+
+ background-image: linear-gradient(to right, #ffd5e0, #b20a2c);
+
+}

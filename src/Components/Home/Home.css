@@ -42,6 +42,10 @@
 
 }
 
-.right-title{
+.left-title{
    color: var(--theme-color);
+}
+
+.btn{
+   background-color: var(--theme-color);
 }

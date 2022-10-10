@@ -5,7 +5,8 @@ import './Header.css'
 const Header = () => {
    const paths = [
       {id:1, pathName:'Home', pathLink:'/home'},
-      {id:2, pathName:'Quizz Section', pathLink:'/quizz'},
+      {id:2, pathName:'Static', pathLink:'/static'},
+      {id:2, pathName:'Blog', pathLink:'/blog'},
    ]
    return (
      <nav className="flex items-center	justify-around	p-5">

@@ -8,7 +8,7 @@ const Option = ({ option, item }) => {
    console.log(item.correctAnswer)
     if(e.target.innerText === item.correctAnswer){
       toast("Correct Ans");
-      // console.log('correct ans')
+      
     }else{
       toast("Wrong Ans");
     }
@@ -16,6 +16,7 @@ const Option = ({ option, item }) => {
 
   return (
     <div className="p-3 ">
+      
       <div className="form-control">
         <label className="label cursor-pointer border option sm:h-fit lg:h-28">
           <span onClick={rightAns} className="label-text m-auto font-medium">

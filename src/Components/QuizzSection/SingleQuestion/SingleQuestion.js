@@ -13,7 +13,7 @@ const SingleQuestion = ({ item }) => {
     <div className="m-10 quiz-box p-5">
       <div className="flex justify-between items-center">
         <h1 className="quiz-title text-lg font-bold mb-10 w-9/12">
-          Quiz 1 {question}
+          {question}
         </h1>
         <div onClick={() => setState(!state)}>
           {state ? (

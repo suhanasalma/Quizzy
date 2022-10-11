@@ -1,12 +1,11 @@
 :root{
   --theme-color:#B40F30;
-  --bg-color1: #FED1DC;
 }
 
 
-.App {
+/* .App {
   text-align: center;
-}
+} */
 
 .App-logo {
   height: 40vmin;

@@ -3,6 +3,7 @@ import { useLoaderData } from 'react-router-dom';
 import SingleQuestion from './SingleQuestion/SingleQuestion';
 import './QuizSection.css'
 
+
 const QuizzSection = () => {
    const data = useLoaderData();
    const quizQuestions =data.data;

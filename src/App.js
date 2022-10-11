@@ -36,11 +36,12 @@ function App() {
         },
         {
           path: "/blog",
-          loader:()=>fetch('Blog.json'),
+          loader: () => fetch("Blog.json"),
           element: <Blog></Blog>,
         },
         {
           path: "/static",
+          loader: () => fetch("https://openapi.programming-hero.com/api/quiz"),
           element: <Static></Static>,
         },
       ],

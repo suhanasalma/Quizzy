@@ -28,7 +28,7 @@ const Blog = () => {
            </a>
          </li>
        </ul>
-       <div className="flex sm:flex-col lg:flex-row  justify-around w-9/12 m-auto ">
+       <div className="flex sm:flex-col lg:flex-row  justify-around w-9/12 m-auto blog-up-container">
          <div className="sm:order-2 md:order-1">
            <h1 className="text-5xl font-bold mb-5">
              Suhana Salma <i class="fa-solid fa-hand"></i>

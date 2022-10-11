@@ -49,3 +49,12 @@
 .btn{
    background-color: var(--theme-color);
 }
+
+@media screen and (max-width:639px) {
+   .home-container{
+      flex-direction: column;
+   }
+
+   
+   
+}

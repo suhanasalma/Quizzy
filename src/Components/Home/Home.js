@@ -11,7 +11,7 @@ const Home = () => {
    const quizCategories = data.data;
 
    return (
-     <div className="flex sm:flex-col lg:flex-row min-h-fit home">
+     <div className="flex sm:flex-col lg:flex-row min-h-fit home home-container">
        <section className="flex-none sm:w-4/4 lg:w-fit side-section m-16 rounded-3xl">
          <HomeLeft />
        </section>

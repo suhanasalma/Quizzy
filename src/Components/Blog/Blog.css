@@ -25,3 +25,10 @@
    }
 }
 
+
+@media screen and (max-width:639px) {
+   .blog-up-container{
+      flex-direction: column;
+   }
+   
+}

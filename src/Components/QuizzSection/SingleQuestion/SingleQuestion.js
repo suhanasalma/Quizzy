@@ -4,7 +4,7 @@ import '../QuizSection.css';
 import { BeakerIcon, EyeIcon } from "@heroicons/react/24/solid";
 
 const SingleQuestion = ({ item }) => {
-   console.log(item)
+
    const { question, options, correctAnswer } = item;
    const [state,setState] = useState(false)
 

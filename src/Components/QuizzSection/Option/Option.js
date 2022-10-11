@@ -16,10 +16,12 @@ const Option = ({ option, item }) => {
 
   return (
     <div className="p-3 ">
-      
       <div className="form-control">
-        <label className="label cursor-pointer border option sm:h-fit lg:h-28">
-          <span onClick={rightAns} className="label-text m-auto font-medium">
+        <label className="label cursor-pointer border option sm:h-fit lg:h-32">
+          <span
+            onClick={rightAns}
+            className="label-text m-auto font-medium xl:text-lg"
+          >
             {option}
           </span>
           <ToastContainer />

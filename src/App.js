@@ -36,7 +36,6 @@ function App() {
         },
         {
           path: "/blog",
-          loader: () => fetch("Blog.json"),
           element: <Blog></Blog>,
         },
         {

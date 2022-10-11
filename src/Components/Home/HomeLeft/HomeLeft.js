@@ -10,9 +10,9 @@ const HomeLeft = () => {
 
    return (
      <div className="p-5 sm:flex sm:flex-row lg:flex-col sm:justify-center">
-       <section className="flex items-center justify-around sm:flex-col lg:flex-row mt-20">
+       <section className="flex items-center justify-around sm:flex-col lg:flex-row md:mt-20">
          <img
-           className="w-36 h-36 object-fill rounded-full mr-5 sm:hidden  md:block"
+           className="w-36 h-36 object-cover rounded-full mr-5 sm:hidden  md:block"
            src={logo1}
            alt=""
          />
@@ -21,9 +21,9 @@ const HomeLeft = () => {
            <p className="">quizzy</p>
          </div>
        </section>
-       <section className="flex items-center justify-around mt-20 sm:flex-col lg:flex-row">
+       <section className="flex items-center justify-around md:mt-20 sm:flex-col lg:flex-row">
          <img
-           className="w-36 h-36 object-fill rounded-full mr-5 sm:hidden md:block"
+           className="w-36 h-36 object-cover rounded-full mr-5 sm:hidden md:block"
            src={logo2}
            alt=""
          />
@@ -32,9 +32,9 @@ const HomeLeft = () => {
            <p>judge yourself</p>
          </div>
        </section>
-       <section className="flex items-center justify-around mt-20 sm:flex-col lg:flex-row">
+       <section className="flex items-center justify-around md:mt-20 sm:flex-col lg:flex-row">
          <img
-           className="w-36 h-36 object-fill rounded-full mr-5 sm:hidden md:block"
+           className="w-36 h-36 object-cover rounded-full mr-5 sm:hidden md:block"
            src={logo3}
            alt=""
          />

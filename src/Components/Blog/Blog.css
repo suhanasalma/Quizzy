@@ -1,8 +1,14 @@
+.blog-container{
+    background-image: linear-gradient(to right, #eefaf9, #e2eff6);
+}
+
 .blog-img{
    animation: profile_animate 8s ease-in-out infinite 1s;
    border-color: var(--theme-color);
 }
-
+.blog-info{
+     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
 .fa-brands , .fa-hand{
    color: var(--theme-color);
 }

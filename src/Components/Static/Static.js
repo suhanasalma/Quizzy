@@ -13,6 +13,7 @@ import {
 const Static = () => {
    const datas = useLoaderData()
    const data = datas.data
+   
    return (
      <div className="flex justify-center items-center h-screen">
        <ResponsiveContainer width="90%" height="80%">

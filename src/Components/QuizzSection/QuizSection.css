@@ -15,3 +15,10 @@
 .option{
    border-color: var(--theme-color);
 }
+
+
+@media screen and (max-width:639px) {
+   .ques-card{
+      width: 100%;
+   }
+}

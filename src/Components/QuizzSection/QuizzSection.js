@@ -13,7 +13,7 @@ const QuizzSection = () => {
    return (
      <div className="quiz-container">
        <h1 className="text-2xl font-bold p-5 text-center">Quiz of {name}</h1>
-       <div className="grid grid-cols-1 w-6/12 m-auto">
+       <div className="grid grid-cols-1 w-6/12 m-auto ques-card">
          {questions.map((item) => (
            <SingleQuestion item={item} key={id}></SingleQuestion>
          ))}

@@ -11,4 +11,5 @@ const BlogDetails = ({ information }) => {
   );
 };
 
+
 export default BlogDetails;
